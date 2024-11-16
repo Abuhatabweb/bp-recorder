@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Recorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <navbar class="navbar">
+        <nav>
+          <img src="logos/logo pharmacy.jpg" />
+          <p> قياسات الضغط </p>
+          <img src="logos/logo pharma.jpg" />
+        </nav>
+      </navbar>
+    <form id="bpForm">
+        <label for="systolic"> الانقباضي (mmHg):</label>
+        <input type="number" id="systolic" required>
+
+        <label for="diastolic"> الانبساطي (mmHg):</label>
+        <input type="number" id="diastolic" required>
+
+        <button type="submit"> سجل </button>
+    </form>
+
+    <table id="recordsTable">
+        <thead>
+            <tr>
+                <th> الوقت و التاريخ</th>
+                <th> ضغط الدم </th>
+                <th>حذف</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
